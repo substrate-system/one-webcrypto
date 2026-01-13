@@ -1,3 +1,3 @@
 declare module "@substrate-system/one-webcrypto" {
-    export const webcrypto: typeof window.crypto
+    export const webcrypto:Crypto;
 }
