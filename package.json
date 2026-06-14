@@ -1,15 +1,8 @@
 {
   "name": "@substrate-system/one-webcrypto",
   "version": "1.1.5",
+  "type": "module",
   "description": "Import the webcrypto API as a single module in both nodejs and browsers.",
-  "repository": "https://github.com/bicycle-codes/one-webcrypto",
-  "author": "Philipp Krüger <philipp@fission.codes>",
-  "license": "MIT",
-  "types": "index.d.ts",
-  "main": "dynamic.cjs",
-  "scripts": {
-    "postversion": "git push --follow-tags && npm publish"
-  },
   "exports": {
     ".": {
       "types": "./index.d.ts",
@@ -23,5 +16,24 @@
       "require": "./*.cjs"
     }
   },
-  "dependencies": {}
+  "main": "dynamic.cjs",
+  "types": "index.d.ts",
+  "scripts": {
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "keywords": [
+    "webcrypto",
+    "crypto"
+  ],
+  "homepage": "https://github.com/mycelial-systems/one-webcrypto",
+  "bugs": {
+    "url": "https://github.com/mycelial-systems/one-webcrypto/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mycelial-systems/one-webcrypto.git"
+  },
+  "license": "MIT",
+  "author": "Philipp Krüger <philipp@fission.codes>",
+  "contributors": ["nichoth <nichoth@nichoth.com>"]
 }
